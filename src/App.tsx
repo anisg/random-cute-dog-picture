@@ -1,31 +1,45 @@
 import React, { useState } from "react";
 import { MainPage } from "./components/live/mainPage/MainPage";
+import { saveAs } from "file-saver";
 
 function App() {
   const [dogImage, setDogImage] = useState<string | null>(null);
 
   function generateImage() {
-    console.log("click");
     fetch("https://dog.ceo/api/breeds/image/random")
       .then(response => response.json())
       .then(data => setDogImage(data.message))
   }
 
-  return (
+  function downloadImage() {
+    console.log("image", dogImage)
+    if (dogImage) {
+      saveAs(dogImage, "dog.jpg");
+    } else {
+      alert("Please generate image first");
+    }
+
+  }
+
+  return (<>
     <MainPage frames={{
       mainPage: {
-        className: 'w-full h-full'
+        className: '!w-full !h-full'
       },
-      cuteDogPictureGenerator: {
-        onClick: generateImage,
+      dogImageContainer: {
+        title: "Click to generate random dog image",
+        className: 'cursor-pointer',
         ...(dogImage && {
-          children: <img src={dogImage} />
-        })
+          inner: <img src={dogImage} className="h-full" />
+        }),
+        onClick: generateImage,
       },
       buttonDownload: {
-        onClick: generateImage,
+        className: 'cursor-pointer',
+        onClick: downloadImage,
       }
     }} />
+  </>
   );
 }
 
