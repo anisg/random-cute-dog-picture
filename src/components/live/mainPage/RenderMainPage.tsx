@@ -1,26 +1,26 @@
 
 // ~ auto-generated - do not edit ~
 import React from 'react';
-import { cls, ElementProps, Div, Span, Svg, } from '../lib';
+import { cls, Div, DivProps, Span, SpanProps, Svg, SvgProps } from '../lib';
 
 export type RenderMainPageProps = {
     frames?: {
-["mainPage"]?: ElementProps<"div">;
-["frame1"]?: ElementProps<"div">;
-["frame7"]?: ElementProps<"div">;
-["cuteDogPictureGenerator"]?: ElementProps<"span">;
-["theServiceAllowsYouToGenerateACuteDogPictureAndDownloadIt"]?: ElementProps<"span">;
-["frame6"]?: ElementProps<"div">;
-["dogImageContainer"]?: ElementProps<"div">;
-["icon"]?: ElementProps<"svg">;
-["clickToGenerate"]?: ElementProps<"span">;
-["frame5"]?: ElementProps<"div">;
-["buttonDownload"]?: ElementProps<"div">;
-["downloadImage"]?: ElementProps<"span">;
-["badgeLiveDesign"]?: ElementProps<"div">;
-["madeOn"]?: ElementProps<"span">;
-["group869"]?: ElementProps<"svg">;
-["liveDesign"]?: ElementProps<"span">}
+["mainPage"]?: DivProps;
+["frame1"]?: DivProps;
+["frame7"]?: DivProps;
+["cuteDogPictureGenerator"]?: SpanProps;
+["theServiceAllowsYouToGenerateACuteDogPictureAndDownloadIt"]?: SpanProps;
+["frame6"]?: DivProps;
+["dogImageContainer"]?: DivProps;
+["icon"]?: SvgProps;
+["clickToGenerate"]?: SpanProps;
+["frame5"]?: DivProps;
+["buttonDownload"]?: DivProps;
+["downloadImage"]?: SpanProps;
+["badgeLiveDesign"]?: DivProps;
+["madeOn"]?: SpanProps;
+["group869"]?: SvgProps;
+["liveDesign"]?: SpanProps}
 ;
 }
 
@@ -33,7 +33,7 @@ export const RenderMainPage = function (props: RenderMainPageProps) {
       <Span {...frames["theServiceAllowsYouToGenerateACuteDogPictureAndDownloadIt"]} className={cls(frames,"theServiceAllowsYouToGenerateACuteDogPictureAndDownloadIt", `font-['Inter'] text-sm font-medium text-[#40454d] text-left flex flex-row justify-start w-[283px] shrink-0 relative`)}>The service allows you to generate a cute dog picture and download it!</Span>
     </Div>
     <Div {...frames["frame6"]} className={cls(frames,"frame6", `gap-[15px] flex-col items-stretch shrink-0 self-stretch object-cover relative opacity-100 p-0 flex`)}>
-      <Div {...frames["dogImageContainer"]} className={cls(frames,"dogImageContainer", `gap-1.5 flex-col justify-center items-center shrink-0 self-stretch object-cover overflow-hidden relative bg-[#e9ecf1] opacity-100 px-[95px] py-5 rounded-md flex`)}><svg className="icon" width={65} height={64} viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <Div {...frames["dogImageContainer"]} className={cls(frames,"dogImageContainer", `gap-1.5 flex-col justify-center items-center shrink-0 self-stretch object-cover overflow-hidden relative bg-[#e9ecf1] opacity-100 px-[95px] py-5 rounded-md flex`)}><svg {...frames["icon"]} className={cls(frames,"icon", ``)} width={65} height={64} viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clipPath="url(#clip0_5_28)">
             <path d="M32.5 63C49.6208 63 63.5 49.1208 63.5 32C63.5 14.8792 49.6208 1 32.5 1C15.3792 1 1.5 14.8792 1.5 32C1.5 49.1208 15.3792 63 32.5 63Z" fill="#DDE0E6" stroke="#949EAE" strokeWidth={2} strokeDasharray="4 5" />
             <path d="M28.5 18.344C28.5 15.564 25.346 13.358 21.5 14C15.854 14.94 13.274 26.012 13.5 28C13.66 29.406 16.95 31.444 20.812 30C23.334 29.056 24.732 27.1 25.5 25M37.034 18.344C37.034 15.564 40.188 13.358 44.034 14C49.68 14.94 52.26 26.012 52.034 28C51.874 29.406 48.584 31.444 44.722 30C42.2 29.056 41.012 27.1 40.244 25M24.5 36V37M40.5 36V37M31 40.5H34L32.5 42L31 40.5Z" stroke="#949EAE" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
@@ -53,7 +53,7 @@ export const RenderMainPage = function (props: RenderMainPageProps) {
     </Div>
   </Div>
   <Div {...frames["badgeLiveDesign"]} className={cls(frames,"badgeLiveDesign", `gap-0.5 flex-row w-fit items-start shrink-0 overflow-hidden absolute shadow-[0px_2px_2px_rgba(0.2356770783662796,0.2644856870174408,0.3125,0.10000000149011612)] bg-white opacity-100 pt-[9px] pb-[7px] px-3.5 rounded-md right-5 bottom-5 flex`)}><Span {...frames["madeOn"]} className={cls(frames,"madeOn", `font-['Inter'] text-xs font-medium text-[#26292f] text-left flex flex-row justify-start shrink-0 relative`)}>Made on</Span>
-    <svg className="group869" width={19} height={17} viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg {...frames["group869"]} className={cls(frames,"group869", ``)} width={19} height={17} viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path opacity="0.6" d="M0 17L3.28916 11H15.9398L19 17H0Z" fill="#295CD7" />
       <ellipse cx="9.5" cy={14} rx="4.5" ry={1} fill="white" />
       <circle cx="9.5" cy="6.5" r={6} fill="#295CD7" stroke="white" />

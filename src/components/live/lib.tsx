@@ -2,7 +2,7 @@ import React from 'react'
 import { twMerge } from 'tailwind-merge'
 
 
-export type ElementProps<T extends keyof JSX.IntrinsicElements = "div"> = JSX.IntrinsicElements[T];
+// export type ElementProps<T extends keyof JSX.IntrinsicElements = "div"> = JSX.IntrinsicElements[T];
 
 export function cls(framesTree: Record<string, any> | undefined, name: string, className: string): string {
   if (framesTree?.[name]?.className) {
@@ -39,4 +39,46 @@ function mergeDeep(target: any, ...sources: any[]) {
 
 export function merge<OverrideType>(...arr: OverrideType[]): OverrideType {
   return arr.reduce((res, cur) => mergeDeep(res, cur), {} as OverrideType);
+}
+
+
+type ElementProps<T extends keyof JSX.IntrinsicElements> = JSX.IntrinsicElements[T] & {
+  outer?: JSX.Element | null;
+  inner?: JSX.Element | null;
+}
+
+export type DivProps = ElementProps<"div">;
+export function Div(props: ElementProps<"div">) {
+  const { outer, inner, ...rest } = props;
+  if (outer !== undefined) {
+    return outer;
+  }
+  if (inner !== undefined) {
+    return <div {...rest}>{inner}</div>
+  }
+  return <div {...rest} />;
+}
+
+export type SpanProps = ElementProps<"span">;
+export function Span(props: ElementProps<"span">) {
+  const { outer, inner, ...rest } = props;
+  if (outer !== undefined) {
+    return outer;
+  }
+  if (inner !== undefined) {
+    return <span {...rest}>{inner}</span>
+  }
+  return <span {...rest} />;
+}
+
+export type SvgProps = ElementProps<"svg">;
+export function Svg(props: ElementProps<"svg">) {
+  const { outer, inner, ...rest } = props;
+  if (outer !== undefined) {
+    return outer;
+  }
+  if (inner !== undefined) {
+    return <svg {...rest}>{inner}</svg>
+  }
+  return <svg {...rest} />;
 }
