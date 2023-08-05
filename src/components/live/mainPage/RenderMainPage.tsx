@@ -1,4 +1,5 @@
 
+// ~ auto-generated - do not edit ~
 import React from 'react';
 import { cls, ElementProps } from '../lib';
 
