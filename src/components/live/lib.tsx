@@ -1,18 +1,4 @@
 import React from 'react'
-import { twMerge } from 'tailwind-merge'
-
-
-// export type ElementProps<T extends keyof JSX.IntrinsicElements = "div"> = JSX.IntrinsicElements[T];
-
-export function cls(framesTree: Record<string, any> | undefined, name: string, className: string): string {
-  if (framesTree?.[name]?.className) {
-    return (
-      twMerge(className, framesTree[name]?.className)
-    );
-  }
-  return className;
-}
-
 function mergeDeep(target: any, ...sources: any[]) {
   function isObject(item: any) {
     return item && typeof item === "object" && !Array.isArray(item);
