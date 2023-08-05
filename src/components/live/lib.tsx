@@ -1,4 +1,11 @@
-import React from 'react'
+import React from 'react'export function cls(framesTree: Record<string, any> | undefined, name: string): string {
+  if (framesTree?.[name]?.className) {
+    return (
+      `${name} ${framesTree[name]?.className}`
+    );
+  }
+  return name;
+}
 function mergeDeep(target: any, ...sources: any[]) {
   function isObject(item: any) {
     return item && typeof item === "object" && !Array.isArray(item);
