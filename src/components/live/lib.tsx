@@ -1,4 +1,8 @@
-import React from 'react'export function cls(framesTree: Record<string, any> | undefined, name: string): string {
+import React from 'react'
+
+
+
+export function cls(framesTree: Record<string, any> | undefined, name: string): string {
   if (framesTree?.[name]?.className) {
     return (
       `${name} ${framesTree[name]?.className}`
