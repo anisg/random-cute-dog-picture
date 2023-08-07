@@ -79,3 +79,15 @@ export function Svg(props: ElementProps<"svg">) {
   }
   return <svg {...rest} />;
 }
+
+export type ImgProps = ElementProps<"img">;
+export function Img(props: ElementProps<"img">) {
+  const { outer, inner, ...rest } = props;
+  if (outer !== undefined) {
+    return outer;
+  }
+  if (inner !== undefined) {
+    return <img {...rest}>{inner}</img>
+  }
+  return <img {...rest} />;
+}
