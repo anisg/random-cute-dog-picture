@@ -1,7 +1,7 @@
 
 // ~ auto-generated - do not edit ~
 import React from 'react';
-import { cls, Div, DivProps, Span, SpanProps, Svg, SvgProps } from '../lib';
+import { cls, Div, DivProps, Span, SpanProps, Svg, SvgProps, Img, ImgProps } from '../lib';
 
 export type RenderTagProps = {
     frames?: {
