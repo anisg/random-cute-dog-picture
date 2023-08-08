@@ -39,7 +39,7 @@ export function combine<OverrideType>(...arr: OverrideType[]): OverrideType {
 }
 
 
-type ElementProps<T extends keyof JSX.IntrinsicElements> = JSX.IntrinsicElements[T] & {
+type ElementProps<T extends keyof JSX.IntrinsicElements> = Omit<JSX.IntrinsicElements[T], "content"> & {
   replace?: JSX.Element | string | null;
   content?: JSX.Element | string | null;
 }
