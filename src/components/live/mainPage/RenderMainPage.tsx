@@ -48,11 +48,11 @@ export function RenderMainPage(props: RenderMainPageProps) {
         </Div>
       </Div>
       <Div {...frames["frame5"]} className={cls(frames, "frame5")} style={{gap: 30, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', flexShrink: 0, alignSelf: 'stretch', objectFit: 'cover', position: 'relative', padding: '0px 0px 0px 0px', opacity: 1, display: 'flex', ...frames["frame5"]}}>
-        <Button frames={{"button":{"style":"{flexShrink: 0, display: " flex', ...frames["button"]}}},"title":{"className":"title","style":"{}","content":"Download Image"}}' />
+        <Button frames={{"button":{"style":{"flexShrink":0,"display":"flex"}},"title":{"className":"title","content":"Download Image"}, ...frames["button"]}} />
       </Div>
     </Div>
   </Div>
-  <BadgeLiveDesign frames={{"badgeLiveDesign":{"style":"{flexShrink: 0, position: " absolute', bottom: 17, right: 27, display: 'flex', ...frames["badgeLiveDesign"]}}},"madeOn":{"className":"madeOn","style":"{}"},"liveDesign":{"className":"liveDesign","style":"{}"}}' />
+  <BadgeLiveDesign frames={{"badgeLiveDesign":{"style":{"flexShrink":0,"position":"absolute","bottom":17,"right":27,"display":"flex"}},"madeOn":{"className":"madeOn"},"liveDesign":{"className":"liveDesign"}, ...frames["badgeLiveDesign"]}} />
 </Div>
     );
 }
