@@ -13,8 +13,8 @@ export type RenderCardProps = {
 ["theColdestSunset"]?: SpanProps;
 ["loremIpsumDolorSitAmetConsecteturAdipisicingElitVoluptatibusQuiaNulla"]?: SpanProps;
 ["tags"]?: DivProps;
-["tagToto"]?: TagTotoProps;
-["okboomerIto"]?: TagTotoProps}
+["tagToto"]?: TagTotoProps["frames"];
+["okboomerIto"]?: TagTotoProps["frames"]}
 ;
 }
 
