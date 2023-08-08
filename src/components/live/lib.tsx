@@ -40,54 +40,54 @@ export function merge<OverrideType>(...arr: OverrideType[]): OverrideType {
 
 
 type ElementProps<T extends keyof JSX.IntrinsicElements> = JSX.IntrinsicElements[T] & {
-  outer?: JSX.Element | null;
-  inner?: JSX.Element | null;
+  replace?: JSX.Element | string | null;
+  content?: JSX.Element | string | null;
 }
 
 export type DivProps = ElementProps<"div">;
 export function Div(props: ElementProps<"div">) {
-  const { outer, inner, ...rest } = props;
-  if (outer !== undefined) {
-    return outer;
+  const { replace, content, ...rest } = props;
+  if (replace !== undefined) {
+    return replace;
   }
-  if (inner !== undefined) {
-    return <div {...rest}>{inner}</div>
+  if (content !== undefined) {
+    return <div {...rest}>{content}</div>
   }
   return <div {...rest} />;
 }
 
 export type SpanProps = ElementProps<"span">;
 export function Span(props: ElementProps<"span">) {
-  const { outer, inner, ...rest } = props;
-  if (outer !== undefined) {
-    return outer;
+  const { replace, content, ...rest } = props;
+  if (replace !== undefined) {
+    return replace;
   }
-  if (inner !== undefined) {
-    return <span {...rest}>{inner}</span>
+  if (content !== undefined) {
+    return <span {...rest}>{content}</span>
   }
   return <span {...rest} />;
 }
 
 export type SvgProps = ElementProps<"svg">;
 export function Svg(props: ElementProps<"svg">) {
-  const { outer, inner, ...rest } = props;
-  if (outer !== undefined) {
-    return outer;
+  const { replace, content, ...rest } = props;
+  if (replace !== undefined) {
+    return replace;
   }
-  if (inner !== undefined) {
-    return <svg {...rest}>{inner}</svg>
+  if (content !== undefined) {
+    return <svg {...rest}>{content}</svg>
   }
   return <svg {...rest} />;
 }
 
 export type ImgProps = ElementProps<"img">;
 export function Img(props: ElementProps<"img">) {
-  const { outer, inner, ...rest } = props;
-  if (outer !== undefined) {
-    return outer;
+  const { replace, content, ...rest } = props;
+  if (replace !== undefined) {
+    return replace;
   }
-  if (inner !== undefined) {
-    return <img {...rest}>{inner}</img>
+  if (content !== undefined) {
+    return <img {...rest}>{content}</img>
   }
   return <img {...rest} />;
 }
