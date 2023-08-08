@@ -1,15 +1,15 @@
 import React from 'react'
-import { twMerge } from 'tailwind-merge'
 
-export function cls(framesTree: Record<string, any> | undefined, name: string, className: string): string {
+
+
+export function cls(framesTree: Record<string, any> | undefined, name: string): string {
   if (framesTree?.[name]?.className) {
     return (
-      twMerge(className, framesTree[name]?.className)
+      `${name} ${framesTree[name]?.className}`
     );
   }
-  return className;
+  return name;
 }
-
 function mergeDeep(target: any, ...sources: any[]) {
   function isObject(item: any) {
     return item && typeof item === "object" && !Array.isArray(item);
