@@ -27,9 +27,9 @@ export const RenderCard = function (props: RenderCardProps) {
       <Span {...frames["loremIpsumDolorSitAmetConsecteturAdipisicingElitVoluptatibusQuiaNulla"]} className={cls(frames,"loremIpsumDolorSitAmetConsecteturAdipisicingElitVoluptatibusQuiaNulla", `font-['Helvetica_Neue'] text-base font-normal text-black text-left flex flex-row justify-start shrink-0 relative`)}>Lorem ipsum dolor sit amet, consectetur <br />adipisicing elit. Voluptatibus quia, nulla!</Span>
     </Div>
     <Div {...frames["tags"]} className={cls(frames,"tags", `gap-[11px] flex-row w-fit items-center shrink-0 relative opacity-100 p-0 flex`)}>
-      <TagToto frames={{"TagToto":{"className":"tagToto shrink-0 flex"}, ...frames["tagToto"]}} />
-      <TagToto frames={{"TagToto":{"className":"okboomerIto shrink-0 bg-[#2d6bdf] flex"}, ...frames["okboomerIto"]}} />
-      <TagToto frames={{"TagToto":{"className":"tagToto shrink-0 flex"}, ...frames["tagToto"]}} />
+      <TagToto frames={{"tagToto":{"className":"tagToto shrink-0 flex"}, ...frames["tagToto"]}} />
+      <TagToto frames={{"okboomerIto":{"className":"okboomerIto shrink-0 bg-[#2d6bdf] flex"}, ...frames["okboomerIto"]}} />
+      <TagToto frames={{"tagToto":{"className":"tagToto shrink-0 flex"}, ...frames["tagToto"]}} />
     </Div>
   </Div>
 </Div>
