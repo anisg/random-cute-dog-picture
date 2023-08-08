@@ -34,7 +34,7 @@ function mergeDeep(target: any, ...sources: any[]) {
   return mergeDeep(target, ...sources);
 }
 
-export function merge<OverrideType>(...arr: OverrideType[]): OverrideType {
+export function combine<OverrideType>(...arr: OverrideType[]): OverrideType {
   return arr.reduce((res, cur) => mergeDeep(res, cur), {} as OverrideType);
 }
 
