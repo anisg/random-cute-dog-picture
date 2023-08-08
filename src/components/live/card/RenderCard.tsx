@@ -14,7 +14,6 @@ export type RenderCardProps = {
 ["loremIpsumDolorSitAmetConsecteturAdipisicingElitVoluptatibusQuiaNulla"]?: SpanProps;
 ["tags"]?: DivProps;
 ["tag"]?: TagProps;
-["photography"]?: SpanProps;
 ["okboomerIto"]?: TagProps}
 ;
 }
