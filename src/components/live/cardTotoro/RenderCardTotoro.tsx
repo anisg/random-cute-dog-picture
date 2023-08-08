@@ -2,6 +2,7 @@
 // ~ auto-generated - do not edit ~
 import React from 'react';
 import { cls, Div, DivProps, Span, SpanProps, Svg, SvgProps, Img, ImgProps } from '../lib';
+import { dankXd } from '../dankXd/dankXd'
 
 export type RenderCardTotoroProps = {
     frames?: {
