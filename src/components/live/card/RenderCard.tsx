@@ -2,6 +2,7 @@
 // ~ auto-generated - do not edit ~
 import React from 'react';
 import { cls, Div, DivProps, Span, SpanProps, Svg, SvgProps, Img, ImgProps } from '../lib';
+import { tag } from '../tag/tag'
 
 export type RenderCardProps = {
     frames?: {
@@ -13,7 +14,8 @@ export type RenderCardProps = {
 ["loremIpsumDolorSitAmetConsecteturAdipisicingElitVoluptatibusQuiaNulla"]?: SpanProps;
 ["tags"]?: DivProps;
 ["tag"]?: DivProps;
-["photography"]?: SpanProps}
+["photography"]?: SpanProps;
+["okboomerIto"]?: DivProps}
 ;
 }
 
@@ -26,12 +28,9 @@ export const RenderCard = function (props: RenderCardProps) {
       <Span {...frames["loremIpsumDolorSitAmetConsecteturAdipisicingElitVoluptatibusQuiaNulla"]} className={cls(frames,"loremIpsumDolorSitAmetConsecteturAdipisicingElitVoluptatibusQuiaNulla", `font-['Helvetica_Neue'] text-base font-normal text-black text-left flex flex-row justify-start shrink-0 relative`)}>Lorem ipsum dolor sit amet, consectetur <br />adipisicing elit. Voluptatibus quia, nulla!</Span>
     </Div>
     <Div {...frames["tags"]} className={cls(frames,"tags", `gap-[11px] flex-row w-fit items-center shrink-0 relative opacity-100 p-0 flex`)}>
-      <Div {...frames["tag"]} className={cls(frames,"tag", `gap-0 flex-row w-fit items-center shrink-0 overflow-hidden relative bg-[#dee3ed] opacity-100 px-4 py-[5px] rounded-[999px] flex`)}><Span {...frames["photography"]} className={cls(frames,"photography", `font-['Helvetica_Neue'] text-xs font-bold text-zinc-700 text-center flex flex-row justify-center shrink-0 relative`)}>#photography</Span>
-      </Div>
-      <Div {...frames["tag"]} className={cls(frames,"tag", `gap-0 flex-row w-fit items-center shrink-0 overflow-hidden relative bg-[#dee3ed] opacity-100 px-4 py-[5px] rounded-[999px] flex`)}><Span {...frames["photography"]} className={cls(frames,"photography", `font-['Helvetica_Neue'] text-xs font-bold text-zinc-700 text-center flex flex-row justify-center shrink-0 relative`)}>#travel</Span>
-      </Div>
-      <Div {...frames["tag"]} className={cls(frames,"tag", `gap-0 flex-row w-fit items-center shrink-0 overflow-hidden relative bg-[#dee3ed] opacity-100 px-4 py-[5px] rounded-[999px] flex`)}><Span {...frames["photography"]} className={cls(frames,"photography", `font-['Helvetica_Neue'] text-xs font-bold text-zinc-700 text-center flex flex-row justify-center shrink-0 relative`)}>#winter</Span>
-      </Div>
+      <tag frames={{"tag":{"className":"tag shrink-0 flex"}, ...frames["tag"]}} />
+      <tag frames={{"tag":{"className":"okboomerIto shrink-0 bg-[#2d6bdf] flex"}, ...frames["tag"]}} />
+      <tag frames={{"tag":{"className":"tag shrink-0 flex"}, ...frames["tag"]}} />
     </Div>
   </Div>
 </Div>
