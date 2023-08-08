@@ -2,7 +2,7 @@
 // ~ auto-generated - do not edit ~
 import React from 'react';
 import { cls, Div, DivProps, Span, SpanProps, Svg, SvgProps, Img, ImgProps } from '../lib';
-
+import { TagToto, TagTotoProps } from '../tagToto/TagToto'
 
 export type RenderCardProps = {
     frames?: {
@@ -27,10 +27,10 @@ export const RenderCard = function (props: RenderCardProps) {
       <Span {...frames["loremIpsumDolorSitAmetConsecteturAdipisicingElitVoluptatibusQuiaNulla"]} className={cls(frames,"loremIpsumDolorSitAmetConsecteturAdipisicingElitVoluptatibusQuiaNulla", `font-['Helvetica_Neue'] text-base font-normal text-black text-left flex flex-row justify-start shrink-0 relative`)}>Lorem ipsum dolor sit amet, consectetur <br />adipisicing elit. Voluptatibus quia, nulla!</Span>
     </Div>
     <Div {...frames["tags"]} className={cls(frames,"tags", `gap-[11px] flex-row w-fit items-center shrink-0 relative opacity-100 p-0 flex`)}>
-      &lt;TagToto framename='tagToto' instancename='TagToto' frames='{'{'}"TagToto":{'{'}"className":"tagToto shrink-0 flex"{'}'}{'}'}'&gt;
-      &lt;TagToto framename='okboomerIto' instancename='TagToto' frames='{'{'}"TagToto":{'{'}"className":"okboomerIto shrink-0 bg-[#2d6bdf] flex"{'}'}{'}'}'&gt;
-      &lt;TagToto framename='tagToto' instancename='TagToto' frames='{'{'}"TagToto":{'{'}"className":"tagToto shrink-0 flex"{'}'}{'}'}'&gt;
-    </Div>
+      <TagToto frames={{"TagToto":{"className":"tagToto shrink-0 flex"}, ...frames["tagToto"]}}>
+        <TagToto frames={{"TagToto":{"className":"okboomerIto shrink-0 bg-[#2d6bdf] flex"}, ...frames["okboomerIto"]}}>
+          <TagToto frames={{"TagToto":{"className":"tagToto shrink-0 flex"}, ...frames["tagToto"]}}>
+          </TagToto></TagToto></TagToto></Div>
   </Div>
 </Div>
     );
