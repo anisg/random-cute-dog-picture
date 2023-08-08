@@ -28,9 +28,9 @@ export const RenderCard = function (props: RenderCardProps) {
       <Span {...frames["loremIpsumDolorSitAmetConsecteturAdipisicingElitVoluptatibusQuiaNulla"]} className={cls(frames,"loremIpsumDolorSitAmetConsecteturAdipisicingElitVoluptatibusQuiaNulla", `font-['Helvetica_Neue'] text-base font-normal text-black text-left flex flex-row justify-start shrink-0 relative`)}>Lorem ipsum dolor sit amet, consectetur <br />adipisicing elit. Voluptatibus quia, nulla!</Span>
     </Div>
     <Div {...frames["tags"]} className={cls(frames,"tags", `gap-[11px] flex-row w-fit items-center shrink-0 relative opacity-100 p-0 flex`)}>
-      <tag frames={{"Tag":{"className":"tag shrink-0 flex"}, ...frames["Tag"]}} />
-      <tag frames={{"Tag":{"className":"okboomerIto shrink-0 bg-[#2d6bdf] flex"}, ...frames["Tag"]}} />
-      <tag frames={{"Tag":{"className":"tag shrink-0 flex"}, ...frames["Tag"]}} />
+      <tag frames={{"Tag":{"className":"tag shrink-0 flex","frameName":"tag"}, ...frames["tag"]}} />
+      <tag frames={{"Tag":{"className":"okboomerIto shrink-0 bg-[#2d6bdf] flex","frameName":"okboomerIto"}, ...frames["okboomerIto"]}} />
+      <tag frames={{"Tag":{"className":"tag shrink-0 flex","frameName":"tag"}, ...frames["tag"]}} />
     </Div>
   </Div>
 </Div>
