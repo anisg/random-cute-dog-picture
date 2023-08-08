@@ -2,7 +2,7 @@
 // ~ auto-generated - do not edit ~
 import React from 'react';
 import { cls, Div, DivProps, Span, SpanProps, Svg, SvgProps, Img, ImgProps } from '../lib';
-import { Tag } from '../tag/Tag'
+import { Tag, TagProps } from '../tag/Tag'
 
 export type RenderCardProps = {
     frames?: {
