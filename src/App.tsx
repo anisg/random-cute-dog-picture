@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { MainPage } from "./components/live/mainPage/MainPage";
 import { saveAs } from "file-saver";
+import { Card } from "./components/live/card/Card";
 
 function App() {
   const [dogImage, setDogImage] = useState<string | null>(null);
@@ -18,13 +19,13 @@ function App() {
     } else {
       alert("Please generate image first");
     }
-
   }
 
   return (<>
+    {/* <div className="w-full h-full"><Card /></div> */}
     <MainPage frames={{
       mainPage: {
-        className: '!w-full !h-full'
+        className: 'w-full h-full'
       },
       dogImageContainer: {
         title: "Click to generate random dog image",
