@@ -18,7 +18,7 @@ export type RenderMainPageProps = {
     ["icon"]?: SvgProps
     ["clickToGenerate"]?: SpanProps
     ["frame5"]?: DivProps
-    ["button"]?: ButtonProps["frames"];
+    ["downloadButton"]?: ButtonProps["frames"];
     ["badgeLiveDesignALinklivedesigncom"]?: BadgeLiveDesignProps["frames"];
 
   }
@@ -31,12 +31,12 @@ export function RenderMainPage(props: RenderMainPageProps) {
         <Div {...frames["mainPage"]} className={cls(frames, "mainPage")} style={{gap: 15, flexDirection: 'column', width: 539, height: 494, justifyContent: 'center', alignItems: 'center', overflow: 'hidden', position: 'relative', padding: '85px 85px 85px 85px', backgroundColor: '#e9ecf1', opacity: 1, display: 'flex', ...frames["mainPage"]?.style}}>
   <Div {...frames["frame1"]} className={cls(frames, "frame1")} style={{gap: 12, flexDirection: 'column', alignItems: 'center', flexShrink: 0, overflow: 'hidden', position: 'relative', border: '1px  SOLID #ebebeb', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.05000000074505806)', borderRadius: 12, padding: '25px 21px 17px 21px', backgroundColor: '#ffffff', opacity: 1, display: 'flex', ...frames["frame1"]?.style}}>
     <Div {...frames["frame7"]} className={cls(frames, "frame7")} style={{gap: 8, flexDirection: 'column', alignItems: 'center', flexShrink: 0, alignSelf: 'stretch', objectFit: 'cover', position: 'relative', padding: '0px 0px 0px 0px', opacity: 1, display: 'flex', ...frames["frame7"]?.style}}>
-      <Span {...frames["cuteDogPictureGenerator"]} className={cls(frames, "cuteDogPictureGenerator")} style={{fontFamily: 'Inter', fontSize: 18, fontWeight: 800, color: '#2f3136', textAlign: 'left', display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', width: 271, flexShrink: 0, position: 'relative', ...frames["cuteDogPictureGenerator"]?.style}}>Cute Dog Picture Generator</Span>
+      <Span {...frames["cuteDogPictureGenerator"]} className={cls(frames, "cuteDogPictureGenerator")} style={{fontFamily: 'Inter', fontSize: 18, fontWeight: 800, color: '#2f3136', textAlign: 'left', width: 271, position: 'relative', ...frames["cuteDogPictureGenerator"]?.style}}>Cute Dog Picture Generator</Span>
     </Div>
-    <Span {...frames["theServiceAllowsYouToGenerateACuteDogPictureAndDownloadIt"]} className={cls(frames, "theServiceAllowsYouToGenerateACuteDogPictureAndDownloadIt")} style={{fontFamily: 'Inter', fontSize: 14, fontWeight: 500, color: '#40454d', textAlign: 'center', display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', width: 283, flexShrink: 0, position: 'relative', ...frames["theServiceAllowsYouToGenerateACuteDogPictureAndDownloadIt"]?.style}}>The service allows you to generate a <Span className="font-bold">cute</Span> dog picture and download it!</Span>
+    <Span {...frames["theServiceAllowsYouToGenerateACuteDogPictureAndDownloadIt"]} className={cls(frames, "theServiceAllowsYouToGenerateACuteDogPictureAndDownloadIt")} style={{fontFamily: 'Inter', fontSize: 14, fontWeight: 500, color: '#40454d', textAlign: 'center', width: 283, position: 'relative', ...frames["theServiceAllowsYouToGenerateACuteDogPictureAndDownloadIt"]?.style}}>The service allows you to generate a <Span className="font-bold">cute</Span> dog picture and download it!</Span>
     <Div {...frames["frame6"]} className={cls(frames, "frame6")} style={{gap: 15, flexDirection: 'column', alignItems: 'stretch', flexShrink: 0, alignSelf: 'stretch', objectFit: 'cover', position: 'relative', padding: '0px 0px 0px 0px', opacity: 1, display: 'flex', ...frames["frame6"]?.style}}>
-      <Div {...frames["dogImageContainer"]} className={cls(frames, "dogImageContainer")} style={{width: 325, height: 140, gap: 6, flexShrink: 0, overflow: 'hidden', position: 'relative', borderRadius: 6, padding: '0px 0px 0px 0px', backgroundColor: '#e9ecf1', opacity: 1, ...frames["dogImageContainer"]?.style}}>
-        <Div {...frames["content"]} className={cls(frames, "content")} style={{gap: 6, position: 'absolute', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '0px 0px 0px 0px', opacity: 1, display: 'flex', ...frames["content"]?.style}}>
+      <Div {...frames["dogImageContainer"]} className={cls(frames, "dogImageContainer")} style={{gap: 10, flexDirection: 'column', alignItems: 'stretch', flexShrink: 0, overflow: 'hidden', position: 'relative', borderRadius: 6, padding: '27px 117px 27px 117px', backgroundColor: '#e9ecf1', opacity: 1, display: 'flex', ...frames["dogImageContainer"]?.style}}>
+        <Div {...frames["content"]} className={cls(frames, "content")} style={{gap: 6, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', flexShrink: 0, position: 'relative', padding: '0px 0px 0px 0px', opacity: 1, display: 'flex', ...frames["content"]?.style}}>
           <svg className="icon" width={65} height={64} viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_5_28)">
               <path d="M32.5 63C49.6208 63 63.5 49.1208 63.5 32C63.5 14.8792 49.6208 1 32.5 1C15.3792 1 1.5 14.8792 1.5 32C1.5 49.1208 15.3792 63 32.5 63Z" fill="#DDE0E6" stroke="#949EAE" strokeWidth={2} strokeDasharray="4 5" />
@@ -49,11 +49,11 @@ export function RenderMainPage(props: RenderMainPageProps) {
               </clipPath>
             </defs>
           </svg>
-          <Span {...frames["clickToGenerate"]} className={cls(frames, "clickToGenerate")} style={{fontFamily: 'Inter', fontSize: 12, fontWeight: 500, color: '#949eae', textAlign: 'left', display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', flexShrink: 0, position: 'relative', ...frames["clickToGenerate"]?.style}}>click to generate</Span>
+          <Span {...frames["clickToGenerate"]} className={cls(frames, "clickToGenerate")} style={{fontFamily: 'Inter', fontSize: 12, fontWeight: 500, color: '#949eae', textAlign: 'left', position: 'relative', ...frames["clickToGenerate"]?.style}}>click to generate</Span>
         </Div>
       </Div>
       <Div {...frames["frame5"]} className={cls(frames, "frame5")} style={{gap: 30, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', flexShrink: 0, alignSelf: 'stretch', objectFit: 'cover', position: 'relative', padding: '0px 0px 0px 0px', opacity: 1, display: 'flex', ...frames["frame5"]?.style}}>
-        <Button frames={combine({"button":{"style":{"flexShrink":0,"display":"flex"}},"containerButton":{"style":{"display":"flex"}},"clickMe":{"content":"Download Image"}}, frames["button"])} />
+        <Button frames={combine({"button":{"className":"downloadButton","style":{"flexShrink":0,"display":"flex"}},"containerButton":{"style":{"display":"flex"}},"clickMe":{"content":"Download Image"}}, frames["downloadButton"])} />
       </Div>
     </Div>
   </Div>
