@@ -6,10 +6,16 @@ import { combine, cls, Div, DivProps, Span, SpanProps, Svg, SvgProps, Img, ImgPr
 
 export type RenderBadgeLiveDesignProps = {
     frames?: {
-["badgeLiveDesign"]?: DivProps;
-["madeOn"]?: SpanProps;
-["group869"]?: SvgProps;
-["liveDesign"]?: SpanProps}
+
+    ["badgeLiveDesign"]?: DivProps
+
+    ["madeOn"]?: SpanProps
+
+    ["group869"]?: SvgProps
+
+    ["liveDesign"]?: SpanProps
+
+  }
 ;
 }
 

@@ -6,8 +6,12 @@ import { combine, cls, Div, DivProps, Span, SpanProps, Svg, SvgProps, Img, ImgPr
 
 export type RenderButtonProps = {
     frames?: {
-["button"]?: DivProps;
-["title"]?: SpanProps}
+
+    ["button"]?: DivProps
+
+    ["title"]?: SpanProps
+
+  }
 ;
 }
 

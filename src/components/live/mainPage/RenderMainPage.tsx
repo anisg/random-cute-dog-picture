@@ -7,19 +7,34 @@ import { BadgeLiveDesign, BadgeLiveDesignProps } from '../badgeLiveDesign/BadgeL
 
 export type RenderMainPageProps = {
     frames?: {
-["mainPage"]?: DivProps;
-["frame1"]?: DivProps;
-["frame7"]?: DivProps;
-["cuteDogPictureGenerator"]?: SpanProps;
-["theServiceAllowsYouToGenerateACuteDogPictureAndDownloadIt"]?: SpanProps;
-["frame6"]?: DivProps;
-["dogImageContainer"]?: DivProps;
-["content"]?: DivProps;
-["icon"]?: SvgProps;
-["clickToGenerate"]?: SpanProps;
-["frame5"]?: DivProps;
-["button"]?: ButtonProps["frames"];
-["badgeLiveDesignLinklivedesigncom"]?: BadgeLiveDesignProps["frames"]}
+
+    ["mainPage"]?: DivProps
+
+    ["frame1"]?: DivProps
+
+    ["frame7"]?: DivProps
+
+    ["cuteDogPictureGenerator"]?: SpanProps
+
+    ["theServiceAllowsYouToGenerateACuteDogPictureAndDownloadIt"]?: SpanProps
+
+    ["frame6"]?: DivProps
+
+    ["dogImageContainer"]?: DivProps
+
+    ["content"]?: DivProps
+
+    ["icon"]?: SvgProps
+
+    ["clickToGenerate"]?: SpanProps
+
+    ["frame5"]?: DivProps
+
+    ["button"]?: ButtonProps["frames"];
+
+    ["badgeLiveDesignLinklivedesigncom"]?: BadgeLiveDesignProps["frames"];
+
+  }
 ;
 }
 
