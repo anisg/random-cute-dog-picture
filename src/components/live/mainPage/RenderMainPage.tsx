@@ -19,7 +19,7 @@ export type RenderMainPageProps = {
     ["clickToGenerate"]?: SpanProps
     ["frame5"]?: DivProps
     ["downloadButton"]?: ButtonProps["frames"];
-    ["badgeLiveDesignALinklivedesigncom"]?: BadgeLiveDesignProps["frames"];
+    ["badgeLiveDesign"]?: BadgeLiveDesignProps["frames"];
 
   }
 ;
@@ -53,11 +53,11 @@ export function RenderMainPage(props: RenderMainPageProps) {
         </Div>
       </Div>
       <Div {...frames["frame5"]} className={cls(frames, "frame5")} style={{gap: 30, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', flexShrink: 0, alignSelf: 'stretch', objectFit: 'cover', position: 'relative', padding: '0px 0px 0px 0px', opacity: 1, display: 'flex', ...frames["frame5"]?.style}}>
-        <Button frames={combine({"button":{"className":"downloadButton","style":{"flexShrink":0,"display":"flex"}},"containerButton":{"style":{"display":"flex"}},"clickMe":{"content":"Download Image"}}, frames["downloadButton"])} />
+        <Button frames={combine({"button":{"className":"downloadButton","style":{"flexShrink":0,"display":"flex"}},"container":{"style":{"display":"flex"}},"clickMe":{"content":"Download Image"}}, frames["downloadButton"])} />
       </Div>
     </Div>
   </Div>
-  <BadgeLiveDesign frames={combine({"badgeLiveDesign":{"className":"badgeLiveDesignALinklivedesigncom","style":{"flexShrink":0,"position":"absolute","bottom":17,"right":27,"display":"flex"}},"madeOn":{"className":"oklm"}}, frames["badgeLiveDesignALinklivedesigncom"])} />
+  <BadgeLiveDesign frames={combine({"badgeLiveDesign":{"as":"a","href":"https://livedesign.app","style":{"flexShrink":0,"position":"absolute","bottom":17,"right":27,"display":"flex"}},"madeOn":{"className":"oklm"}}, frames["badgeLiveDesign"])} />
 </Div>
     );
 }

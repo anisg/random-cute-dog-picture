@@ -38,15 +38,27 @@ export function combine<OverrideType>(...arr: OverrideType[]): OverrideType {
   return arr.reduce((res, cur) => mergeDeep(res, cur), {} as OverrideType);
 }
 
+type AllowedTags = "div" | "span" | "svg" | "img" | "button" | "a" | "input" | "textarea" | "select" | "option" | "form" | "label" | "p" | "h1" | "h2" | "h3" | "h4";
 
 type ElementProps<T extends keyof JSX.IntrinsicElements> = Omit<JSX.IntrinsicElements[T], "content"> & {
   replace?: JSX.Element | string | null;
   content?: JSX.Element | string | null;
+  as?: AllowedTags
 }
 
 export type DivProps = ElementProps<"div">;
+export function Element(props: ElementProps<AllowedTags>) {
+
+  // create a comp of type div
+  const Comp = React.createElement(props.as || "div", props);
+  return <Comp {...props} />;
+
+}
 export function Div(props: ElementProps<"div">) {
-  const { replace, content, ...rest } = props;
+  const { replace, content, as, ...rest } = props;
+  if (as) {
+    return Element(props);
+  }
   if (replace !== undefined) {
     return replace;
   }
@@ -58,7 +70,10 @@ export function Div(props: ElementProps<"div">) {
 
 export type SpanProps = ElementProps<"span">;
 export function Span(props: ElementProps<"span">) {
-  const { replace, content, ...rest } = props;
+  const { replace, content, as, ...rest } = props;
+  if (as) {
+    return Element(props);
+  }
   if (replace !== undefined) {
     return replace;
   }
@@ -68,9 +83,14 @@ export function Span(props: ElementProps<"span">) {
   return <span {...rest} />;
 }
 
+type B = JSX.IntrinsicElements["button"];
+
 export type SvgProps = ElementProps<"svg">;
 export function Svg(props: ElementProps<"svg">) {
-  const { replace, content, ...rest } = props;
+  const { replace, content, as, ...rest } = props;
+  if (as) {
+    return Element(props);
+  }
   if (replace !== undefined) {
     return replace;
   }
@@ -82,7 +102,7 @@ export function Svg(props: ElementProps<"svg">) {
 
 export type ImgProps = ElementProps<"img">;
 export function Img(props: ElementProps<"img">) {
-  const { replace, content, ...rest } = props;
+  const { replace, content, as, ...rest } = props;
   if (replace !== undefined) {
     return replace;
   }
