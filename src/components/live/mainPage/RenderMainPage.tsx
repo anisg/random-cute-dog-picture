@@ -19,7 +19,7 @@ export type RenderMainPageProps = {
 ["clickToGenerate"]?: SpanProps;
 ["frame5"]?: DivProps;
 ["button"]?: ButtonProps["frames"];
-["badgeLiveDesign"]?: BadgeLiveDesignProps["frames"]}
+["badgeLiveDesignLinklivedesigncom"]?: BadgeLiveDesignProps["frames"]}
 ;
 }
 
@@ -52,7 +52,7 @@ export function RenderMainPage(props: RenderMainPageProps) {
       </Div>
     </Div>
   </Div>
-  <BadgeLiveDesign frames={combine({"badgeLiveDesign":{"style":{"flexShrink":0,"position":"absolute","bottom":17,"right":27,"display":"flex"}},"madeOn":{"className":"madeOn"},"liveDesign":{"className":"liveDesign"}}, frames["badgeLiveDesign"])} />
+  <BadgeLiveDesign frames={combine({"badgeLiveDesign":{"className":"badgeLiveDesignLinklivedesigncom","style":{"flexShrink":0,"position":"absolute","bottom":17,"right":27,"display":"flex"}},"madeOn":{"className":"madeOn"},"liveDesign":{"className":"liveDesign"}}, frames["badgeLiveDesignLinklivedesigncom"])} />
 </Div>
     );
 }
