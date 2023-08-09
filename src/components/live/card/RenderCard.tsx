@@ -32,8 +32,8 @@ export function RenderCard(props: RenderCardProps) {
     </Div>
     <Div {...frames["tags"]} className={cls(frames, "tags")} style={{gap: 10, flexDirection: 'row', width: 'fit-content', alignItems: 'center', flexShrink: 0, position: 'relative', padding: '0px 0px 0px 0px', opacity: 1, display: 'flex', ...frames["tags"]?.style}}>
       <Tag frames={combine({"tag":{"style":{"flexShrink":0,"display":"flex"}}}, frames["tag"])} />
-      <Tag frames={combine({"tag":{"className":"okboomerIto","style":{"flexShrink":0,"backgroundColor":"rgba(131,168,236,0.67)","display":"flex"}},"":{"content":"#travel"}}, frames["okboomerIto"])} />
-      <Tag frames={combine({"tag":{"style":{"flexShrink":0,"display":"flex"}},"":{"content":"#winter"}}, frames["tag"])} />
+      <Tag frames={combine({"tag":{"className":"okboomerIto","style":{"flexShrink":0,"backgroundColor":"rgba(131,168,236,0.67)","display":"flex"}},"photography":{"content":"#travel"}}, frames["okboomerIto"])} />
+      <Tag frames={combine({"tag":{"style":{"flexShrink":0,"display":"flex"}},"photography":{"content":"#winter"}}, frames["tag"])} />
     </Div>
   </Div>
 </Div>
