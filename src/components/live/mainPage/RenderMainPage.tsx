@@ -52,7 +52,7 @@ export function RenderMainPage(props: RenderMainPageProps) {
       </Div>
     </Div>
   </Div>
-  <BadgeLiveDesign frames={combine({"badgeLiveDesign":{"className":"badgeLiveDesignLinklivedesigncom","style":{"flexShrink":0,"position":"absolute","bottom":17,"right":27,"display":"flex"}},"madeOn":{"className":"madeOn"},"liveDesign":{"className":"liveDesign"}}, frames["badgeLiveDesignLinklivedesigncom"])} />
+  <BadgeLiveDesign frames={combine({"badgeLiveDesign":{"className":"badgeLiveDesignLinklivedesigncom","style":{"flexShrink":0,"position":"absolute","bottom":17,"right":27,"display":"flex"}},"oklm":{"className":"oklm"},"liveDesign":{"className":"liveDesign"}}, frames["badgeLiveDesignLinklivedesigncom"])} />
 </Div>
     );
 }
