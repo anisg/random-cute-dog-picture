@@ -48,11 +48,11 @@ export function RenderMainPage(props: RenderMainPageProps) {
         </Div>
       </Div>
       <Div {...frames["frame5"]} className={cls(frames, "frame5")} style={{gap: 30, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', flexShrink: 0, alignSelf: 'stretch', objectFit: 'cover', position: 'relative', padding: '0px 0px 0px 0px', opacity: 1, display: 'flex', ...frames["frame5"]?.style}}>
-        <Button frames={combine({"button":{"style":{"flexShrink":0,"backgroundColor":"#ff4444","display":"flex"}},"title":{"className":"title","content":"Download Image"}}, frames["button"])} />
+        <Button frames={combine({"button":{"style":{"flexShrink":0,"backgroundColor":"#ff4444","display":"flex"}},"title":{"content":"Download Image"}}, frames["button"])} />
       </Div>
     </Div>
   </Div>
-  <BadgeLiveDesign frames={combine({"badgeLiveDesign":{"className":"badgeLiveDesignLinklivedesigncom","style":{"flexShrink":0,"position":"absolute","bottom":17,"right":27,"display":"flex"},"originalFrameName":"badgeLiveDesign"},"oklm":{"className":"oklm"},"liveDesign":{"className":"liveDesign"}}, frames["badgeLiveDesignLinklivedesigncom"])} />
+  <BadgeLiveDesign frames={combine({"badgeLiveDesign":{"className":"badgeLiveDesignLinklivedesigncom","style":{"flexShrink":0,"position":"absolute","bottom":17,"right":27,"display":"flex"}},"oklm":{"className":"oklm"},"liveDesign":{}}, frames["badgeLiveDesignLinklivedesigncom"])} />
 </Div>
     );
 }
